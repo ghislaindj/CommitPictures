@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+git log -1 --pretty=%B >> ~/Pictures/GitPhotos/$(date +%y%m%d%H%M%S)-${PWD##*/}.txt
+imagesnap ~/Pictures/GitPhotos/$(date +%y%m%d%H%M%S)-${PWD##*/}.png -w 1
